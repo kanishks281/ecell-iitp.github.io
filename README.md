@@ -1,1 +1,1 @@
-# ecell-iitp
+# Entrepreneurship Cell - Official Website

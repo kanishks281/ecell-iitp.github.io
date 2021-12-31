@@ -1,0 +1,19 @@
+body {
+  max-width: 768px;
+  margin: auto;
+
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  padding: 15px;
+}
+
+.article {
+  font-family: "EB Garamond", serif;
+  color: #fff99e;
+  font-size: 20px;
+}
+
+.article b {
+  font-weight: 700;
+}

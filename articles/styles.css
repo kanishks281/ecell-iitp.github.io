@@ -1,19 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=PT+Serif&display=swap");
+
+@font-face {
+  font-family: charter-regular;
+  src: url(../webfonts/charter-400-normal.woff);
+}
+
+@font-face {
+  font-family: charter-bold;
+  src: url(../webfonts/charter-700-normal.woff);
+}
+
 body {
   max-width: 768px;
   margin: auto;
 
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: #ffefba;
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+  background: linear-gradient(to right, #ffffff, #ffefba);
+
   padding: 15px;
+  text-rendering: optimizeLegibility;
 }
 
 .article {
-  font-family: "EB Garamond", serif;
-  color: #fff99e;
-  font-size: 20px;
+  font-family: "charter-regular";
+  color: rgb(22, 19, 6);
+  font-size: 21px;
 }
 
 .article b {
+  font-family: "charter-bold";
   font-weight: 700;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+p {
+  line-height: 30px;
+  letter-spacing: -0.003em;
+}
+
+h1,
+h2 {
+  font-family: "EB Garamond", serif;
 }

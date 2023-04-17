@@ -1354,12 +1354,13 @@ input[type='checkbox'] {
 .basic-4 .image-wrapper {
 	overflow: hidden;
 	margin-bottom: 1.5rem;
-	border-radius: 50%;
+	border-radius: 20px;
 }
 
 .basic-4 .image-wrapper img {
 	margin: 0;
 	transition: all 0.3s;
+	height: 190px;
 }
 
 .basic-4 .image-wrapper:hover img {
